@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50">
@@ -11,9 +13,11 @@ export default function Home() {
             Your complete preparation platform for the FAA Private Pilot
             Knowledge Test
           </p>
-          <button className="bg-sky-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-sky-700 transition-colors shadow-sm">
-            Start Free Practice Test
-          </button>
+          <Link href="/section">
+            <button className="bg-sky-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-sky-700 transition-colors shadow-sm">
+              Start Free Practice Test
+            </button>
+          </Link>
         </div>
 
         {/* Key Benefits */}
@@ -65,9 +69,11 @@ export default function Home() {
             Join thousands of successful student pilots who passed their FAA
             written exam
           </p>
-          <button className="bg-sky-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-sky-700 transition-colors shadow-sm">
-            Get Started Now
-          </button>
+          <Link href="/section">
+            <button className="bg-sky-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-sky-700 transition-colors shadow-sm">
+              Get Started Now
+            </button>
+          </Link>
         </div>
       </main>
     </div>
